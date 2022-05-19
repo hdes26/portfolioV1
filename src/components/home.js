@@ -1,45 +1,46 @@
-
+import wave from '../assets/621c2cf7525dae619ce95520_Wave.svg'
 
 const home = () => (
-        <>
-            <div style={{ display: "flex", height: "100vh", width: '100%', flexDirection: 'column' }}>
-                <div style={{ backgroundColor: "white", height: 'inherit', display: 'flex', justifyContent: 'center', alignItems: 'end' }}>
-                    <div className='homeImg' style={{ display: "flex", justifyContent: "center" }}>
-                        <h1 style={{ fontFamily: 'Montserrat_sub', fontSize: '105px', color: 'white', display: "flex", flexDirection: "column", alignSelf: "end", textAlign: "center", marginBottom: '0px' }}>
-                            Hernan
+    <>
+        <div style={{ height: "130vh" }} className="flex flex-col w-full">
+            <div style={{ height: 'inherit' }} className="flex items-end justify-center bg-white">
+                <div className='homeImg' style={{ display: "flex", justifyContent: "center" }}>
+                    <h1 style={{ fontFamily: 'Montserrat_sub', fontSize: '82px' }} className="flex flex-col self-center text-center mb-0 text-white ">
+                        Hernan
 
-                            <br />
-                            <span style={{ fontFamily: 'Montserrat_suba', fontWeight: 'bold', fontSize: "larger" }}>
-                                ESCORCIA
-                            </span>
-                        </h1>
-                    </div>
+                        <br />
+                        <span style={{ fontFamily: 'Montserrat_suba', fontWeight: 'bold', fontSize: "larger" }}>
+                            ESCORCIA
+                        </span>
+                    </h1>
                 </div>
-
-
-                <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-evenly', backgroundColor: "black", height: 'inherit', color: 'white' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', margin: '40px' }}>
-                        <h3 style={{ color: '#59ca59', margin: '1px', fontSize: '13px' }}>BORN IN</h3>
-                        <b style={{ fontSize: '18px' }}>Colombia</b>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', margin: '40px' }}>
-                        <h3 style={{ color: '#59ca59', margin: '1px', fontSize: '13px' }}>EXPERIENCE</h3>
-                        <b style={{ fontSize: '18px' }}>+5 Months</b>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', margin: '40px' }}>
-                        <h3 style={{ color: '#59ca59', margin: '1px', fontSize: '13px' }}>DATE OF BIRTH</h3>
-                        <b style={{ fontSize: '18px' }}>26 September 2000</b>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'row', margin: '40px' }}>
-                        <h3 style={{ margin: '1px', fontSize: '18px' }}>Got a project?</h3>
-                        <b style={{ margin: '1px', fontSize: '18px', color: '#59ca59', marginLeft: '10px', textDecoration: 'underline', cursor: 'pointer' }}>Let's talk</b>
-                    </div>
-                </div>
-
             </div>
-        </>
-    
-    )
+
+
+            <div style={{ height: '160vh' }} className="flex items-end justify-evenly bg-black text-white">
+                            <img src={wave} style={{bottom:"5%"}} className="absolute left-auto top-auto right-auto  z-10 w-full" ></img>
+                <div className="flex flex-col mb-14">
+                    <h3 className="m-px text-green-500 text-sm">BORN IN</h3>
+                    <b className="text-lg">Colombia</b>
+                </div>
+                <div className="flex flex-col mb-14">
+                    <h3 className="m-px text-green-500 text-sm">EXPERIENCE</h3>
+                    <b className="text-lg">+5 Months</b>
+                </div>
+                <div className="flex flex-col mb-14">
+                    <h3 className="m-px text-green-500 text-sm">DATE OF BIRTH</h3>
+                    <b className="text-lg">26 September 2000</b>
+                </div>
+                <div className="flex flex-row mb-14">
+                    <b className="m-px text-lg">Got a project?</b>
+                    <b className="m-px text-lg text-green-500 ml-2.5 underline cursor-pointer">Let's talk</b>
+                </div>
+            </div>
+
+        </div>
+    </>
+
+)
 
 
 
