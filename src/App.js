@@ -7,9 +7,10 @@ const App = () => (
         {/* Navbar */}
         <Navbar />
         
-
         {/* Home */}
         <Home />
+
+        {/* Animation */}
 
         {/* About me */}
 

@@ -3,13 +3,13 @@
 
 const navbar = () => (
     <>
-        <nav className="container flex justify-between px-4 py-8 mx-auto bg-white">
+        <nav className="flex justify-around px-4 py-5 mx-auto bg-white fixed z-10  w-full">
             <div>
                 <h3 className="text-2xl font-medium text-black">Hdes</h3>
             </div>
-            <div className="hidden space-x-8 lg:flex">
+            <div className="hidden space-x-8 lg:flex justify-self-center">
                 <a href="!#">Home</a>
-                <a href="!#">About Us</a>
+                <a href="!#">About</a>
                 <a href="!#">Blogs</a>
                 <a href="!#">Our Team</a>
                 <a href="!#">Contact Us</a>

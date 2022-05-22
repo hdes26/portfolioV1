@@ -8,12 +8,15 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Montserrat_sub';
   src: url('./assets/fonts/Montserrat_Subrayada/MontserratSubrayada-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Subrayada:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -29,18 +32,128 @@ code {
     monospace;
 }
 
-.homeImg{
+.homeImg {
   background-image: url('./assets/img2.png');
   background-size: 97%;
   background-repeat: no-repeat;
   background-position: 60% center;
-  width: 56%;
-  height: 85%;
+  width: 43%;
+  height: 55%;
   z-index: 1;
   position: absolute;
-  top: 27vh;
+  top: 17vh;
   background-color: #8c0007;
-  background-blend-mode: multiply; 
+  background-color: #6a0797;
+  background-blend-mode: multiply;
   filter: brightness(130.9%);
 }
+
+
+body {
+  background: #182028;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+   0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "h"; }
+  2.2791%, 25.0698% { content: "hu"; }
+  3.4186%, 23.9302% { content: "hum"; }
+  4.5581%, 22.7907% { content: "huma"; }
+  5.6977%, 21.6512% { content: "human"; }
+
+  28.0000%, 54.3488% { content: ""; }
+  29.1395%, 53.2093% { content: "d"; }
+  30.2791%, 52.0698% { content: "de"; }
+  31.7674%, 51.2791%{ content: "dev"; }
+  31.9070%, 50.1395%{ content: "deve"; }
+  33.0465%, 49.0000%{ content: "devel"; }
+  34.1860%, 47.8605%{ content: "develo"; }
+  35.3256%, 46.7209%{ content: "develop"; }
+  36.4651%, 45.5814%{ content: "develope"; }
+  37.6047%, 44.4419% { content: "developer"; }
+
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "e"; }
+  56.9767%, 72.9302% { content: "en"; }
+  58.1163%, 71.7907% { content: "eng"; }
+  59.2558%, 70.6512% { content: "engi"; }
+  60.3953%, 69.5116% { content: "engin"; }
+  61.5349%, 68.3721% { content: "engine"; }
+  62.5349%, 67.3721% { content: "enginee"; }
+  63.5349%, 66.3721% { content: "engineer"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "d"; }
+  80.9070%, 94.5814% { content: "dr"; }
+  82.0465%, 93.4419% { content: "dre"; }
+  83.1860%, 92.3023% { content: "drea"; }
+  84.3256%, 91.1628% { content: "dream"; }
+  85.3256%, 90.1628% { content: "dreame"; }
+  86.3256%, 89.1628% { content: "dreamer"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
 
