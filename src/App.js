@@ -1,29 +1,37 @@
-import React, { Fragment } from 'react'
-import Home from './components/home'
-import Navbar from './components/navbar'
+import React, { Fragment } from "react";
+import Home from "./components/home";
+import Navbar from "./components/navbar";
+import About from "./components/about";
+import TextAnimation from "./components/textAnimation";
 const App = () => (
+  <>
+    {/* Navbar */}
 
-    <>
-        {/* Navbar */}
-        <Navbar />
-        
-        {/* Home */}
-        <Home />
+    {/* Home */}
+    <section>
+      <Home />
+    </section>
 
-        {/* Animation */}
+    {/* Animation */}
+    <TextAnimation />
 
-        {/* About me */}
+    {/* About me */}
+    <section>
+      <About />
+    </section>
 
-        {/* Projects */}
+    {/* Projects */}
+    <section></section>
 
-        {/* Contact me */}
+    {/* Contact me */}
+    <section></section>
 
-        {/* Services */}
+    {/* Services */}
+    <section></section>
 
-        {/* Skills */}
-
-    </>
-)
-
+    {/* Skills */}
+    <section></section>
+  </>
+);
 
 export default App;

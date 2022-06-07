@@ -5,15 +5,7 @@ const home = () => (
         <div className="flex flex-col w-full">
             <div style={{ height: '50vh' }} className="flex items-end justify-center bg-white">
                 <div className='homeImg' style={{ display: "flex", justifyContent: "center" }}>
-                    <img src={wave} style={{ bottom: "5%", top: "29vh", zIndex: "1", maxWidth: "inherit" }} className="absolute left-auto right-auto w-screen" ></img>
-{/*                     <h1 style={{ fontFamily: 'Montserrat_sub', fontSize: 'calc(7vw - 50px)' }} className="flex flex-col self-end text-center mb-0 text-white z-10">
-                        Hernan
-                        <br />
-                        <span style={{ fontFamily: 'Montserrat_suba', fontWeight: 'bold', fontSize: "larger" }}>
-                            ESCORCIA
-                        </span>
-                    </h1> */}
-    
+                    <img src={wave} style={{ bottom: "5%", top: "34vh", zIndex: "1", maxWidth: "inherit" }} className="absolute left-auto right-auto w-screen" ></img>
                     <h1 style={{  fontSize: 'calc(7vw - 50px)' }} className="flex flex-col self-end text-center mb-0 text-white z-10" aria-label="Hi! I'm a developer">
                         Hi! I'm Hernan&nbsp;<span className="typewriter thick"></span>
                     </h1>
@@ -28,7 +20,7 @@ const home = () => (
                 </div>
                 <div className="flex flex-col mb-14">
                     <h3 style={{ color: "#83fa47" }} className="m-px  text-sm font-bold">EXPERIENCE</h3>
-                    <b className="text-lg">+5 Months</b>
+                    <b className="text-lg">+6 Months</b>
                 </div>
                 <div className="flex flex-col mb-14">
                     <h3 style={{ color: "#83fa47" }} className="m-px text-sm font-bold">DATE OF BIRTH</h3>
